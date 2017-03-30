@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "LubalinGraphStd-ExtraLight";
+    src: url("LubalinGraphStd-ExtraLight.eot");
+    src: url("LubalinGraphStd-ExtraLight.eot?#iefix") format("embedded-opentype"),
+         url("LubalinGraphStd-ExtraLight.woff2") format("woff2"),
+         url("LubalinGraphStd-ExtraLight.woff") format("woff"),
+         url("LubalinGraphStd-ExtraLight.ttf") format("ttf"),
+         url("LubalinGraphStd-ExtraLight.svg#LubalinGraphStd-ExtraLight") format("svg");
+    font-style: normal;
+    font-weight: 200;
+}

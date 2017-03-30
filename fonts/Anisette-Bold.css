@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Anisette-Bold";
+    src: url("Anisette-Bold.eot");
+    src: url("Anisette-Bold.eot?#iefix") format("embedded-opentype"),
+         url("Anisette-Bold.woff2") format("woff2"),
+         url("Anisette-Bold.woff") format("woff"),
+         url("Anisette-Bold.ttf") format("ttf"),
+         url("Anisette-Bold.svg#Anisette-Bold") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}

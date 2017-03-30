@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  &::selection {
+    background: transparent;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+body {
+  background: $background-color;
+  color: $main-color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $system-stack;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  border-bottom: 3px solid blue;
+  font-family: $sans-serif-bold-stack;
+  // font-style: italic;
+  &:visited {
+    color: red;
+  }
+  &:hover {
+    color: black;
+    border-bottom: 3px solid purple;
+  }
+  &:active {
+    color: red;
+  }
+}
+
+p, table {
+  font-family: $sans-serif-stack;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h1 {
+  font-family: $display-stack;
+  font-size: $font-size-display;
+  line-height: $line-height-display;
+  // color: rgba(132, 182, 111, 1);
+  // text-transform: uppercase;
+}
+
+h2 {
+  font-family: $display-stack;
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+  // color: rgba(132, 182, 111, 1);
+}
+
+.icon {
+  &.plus, &.equals {
+    font-family: $display-stack;
+    font-size: $font-size * 4;
+    line-height: $line-height * 4;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    overflow: hidden;
+    opacity: 0.3;
+  }
+}

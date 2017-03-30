@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "ChocStd";
+    src: url("ChocStd.eot");
+    src: url("ChocStd.eot?#iefix") format("embedded-opentype"),
+         url("ChocStd.woff2") format("woff2"),
+         url("ChocStd.woff") format("woff"),
+         url("ChocStd.ttf") format("ttf"),
+         url("ChocStd.svg#ChocStd") format("svg");
+    font-style: normal;
+    font-weight: regular;
+}

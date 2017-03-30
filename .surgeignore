@@ -1,0 +1,8 @@
+node_modules
+.sass-cache
+.DS_Store
+src/js/config.js
+wp
+src
+*.sh
+*.md

@@ -1,0 +1,180 @@
+body {
+  overflow-x: hidden;
+}
+
+// .title, .description, .inspiration, .result {
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+// }
+
+.global {
+  position: fixed;
+  width: 80vw;
+  height: 45vh;
+  top: 10vh;
+  border-radius: 50%;
+  border: 1px solid black;
+  z-index: 99;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  @include center-horizontal;
+  h1 {
+    width: 80%;
+    @include center;
+  }
+}
+
+.introduction {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  &.active {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  h2 {
+    padding-top: 10vh;
+  }
+  p {
+    width: 80vw;
+    padding: 0 0 0 10vw;
+  }
+}
+
+.post {
+  width: 100vw;
+  height: 60vh;
+  @include transition(all, .3s, linear);
+  &.active {
+    width: 100vw;
+    height: 100vh;
+  }
+  .revisions {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: $line-height-small;
+
+    marquee {
+      position: absolute;
+      bottom: 0;
+      font-family: $sans-serif-bold-stack;
+      font-size: $font-size-small;
+      line-height: $line-height-small;
+    }
+  }
+  .title, .description, .inspiration, .result {
+    position: relative;
+    float: left;
+  }
+  .title {
+    width: 50vw;
+    height: 50vh;
+    font-family: $display-stack;
+    font-size: $font-size * 4;
+    line-height: $line-height * 4;
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s ease;
+    &.inactive {
+      // width: 100vw;
+    }
+    h1 {
+      max-width: 95%;
+      @include center-vertical;
+    }
+  }
+  .description {
+    width: 50vw;
+    height: 50vh;
+    padding: 10px 10px 20px 20px;
+    &:hover {
+      .revisions {
+        display: block;
+      }
+    }
+    p, a {
+      width: 90%;
+    }
+  }
+  .inspiration {
+    width: 50vw;
+    height: $scrollbar-height;
+    @include transition(all, .3s, linear);
+    &.active {
+      width: 50vw;
+      height: 50vh;
+      overflow: hidden;
+    }
+  }
+  .result {
+    width: 50vw;
+    height: $scrollbar-height;
+    @include transition(all, .3s, linear);
+    &.active {
+      width: 50vw;
+      height: 50vh;
+    }
+  }
+  .inspiration, .result {
+    .swiper-container {
+      position: absolute;
+
+      margin: 0;
+      width: 100%;
+      height: 100%;
+
+      .swiper-slide {
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &.fact {
+    background-color: rgb(255, 230, 0);
+    @include transition(all, .3s, linear);
+    width: 100vw;
+    height: 100%;
+    &.active {
+      width: 100vw;
+      height: 100%;
+    }
+    .title {
+      position: relative;
+      display: block;
+      width: 100vw;
+      height: 15vh;
+      text-align: center;
+      h1 {
+        width: 100%;
+        line-height: 15vh;
+      }
+    }
+    .table {
+      position: relative;
+      table {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        td {
+          border: 1px solid black;
+          padding: 10px 10px 20px 20px;
+          img {
+            border: 3px solid black;
+            max-width: 90%;
+
+          }
+        }
+      }
+    }
+  }
+}
